@@ -6,10 +6,6 @@
     padding: 0;
 }
 
-body {
-    // background: #E5E5E5;
-}
-
 .wrapper {
     max-width: 1140px;
     margin: auto;
@@ -244,4 +240,87 @@ body {
 
 .playButton {
     outline: none;
+}
+
+.advantages {
+    width: 90%;
+    margin-top: 103px;
+
+    &__title {
+        width: 714px;
+        margin-top: 80px;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        counter-reset: li;
+    }
+
+    &__advantage-card::before {
+        counter-increment: li;
+        content: "0" counters(li,".");
+        font-family: Circe;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 120%;
+        position: absolute;
+        margin-left: 37px;
+        margin-top: 30px;
+        color: #FFFFFF;
+    }
+
+    &__advantage-card {
+        max-width: 500px;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 70px;
+    }
+
+    &__block {
+        display: flex;
+    }
+
+    &__content {
+        width: 390px;
+    }
+}
+
+.advantage-card {
+
+    &__img {
+        width: 116.61px;
+    }
+
+    &__content {
+        width: 390px;
+    }
+
+    &__heading {
+        margin-left: 50px;
+    }
+
+    &__text {
+        margin-left: 50px;
+    }
+}
+
+.card-title {
+    font-family: Circe;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 120%;
+    color: #24242E;
+}
+
+.card-subtitle {
+    font-family: Circe;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    color: #24242E;
+    margin-top: 11px;
 }
