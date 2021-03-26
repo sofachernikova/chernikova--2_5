@@ -1,0 +1,247 @@
+@import url("http://db.onlinewebfonts.com/c/51e35a1ffb5e3b1585fa96a24179dd52?family=Circe");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    // background: #E5E5E5;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.title {
+    font-family: 'Circe';
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 120%;
+    color: #24242E;
+}
+
+
+.header {
+    background-image: url("img/header-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    &__section {
+        width: 90%;
+        padding-top: 11px;
+        padding-bottom: 172px;
+    }
+
+    &__main {
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;
+    }
+
+    &__content {
+        margin-top: 80px;
+    }
+
+    &__title {
+        max-width: 605px;
+        font-family: 'Circe';
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 137%;
+        color: #24242E;
+        @media (min-width: 0) {
+            font-size: calc(25px + (40 - 25) * ((100vw - 320px) / (1400 - 320)))
+        }
+    }
+
+    &__subtitle {
+        margin-top: 20px;
+        font-family: 'Circe';
+        font-size: 18px;
+        line-height: 27px;
+        color: #24242E;
+    }
+
+    &__icons {
+        margin-top: 59px;
+        max-width: 817px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 122px;
+    }
+
+}
+
+.hover__title {
+    color: #1E489B;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+
+    &__logo {
+        padding-right: 78px;
+    }
+
+     &__block {
+        list-style: none;
+     }
+
+     &__item {
+         margin-left: 20px;
+     }
+
+     &__link {
+        font-family: 'Circe';
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 110%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #24242E;
+        padding-top: 26px;
+     }
+
+    &__link:hover {
+        border-top: 4px solid #1E489B;
+    }
+
+     &__minilink {
+        font-family: 'Circe';
+        font-size: 14px;
+        line-height: 21px;
+        color: #1E489B;
+        text-decoration: none;
+        margin-left: auto;
+        margin-right: 0;
+     }
+}
+
+.menu {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+}
+
+.logoText {
+    font-family: 'Exo 2';
+    font-weight: normal;
+    font-size: 9.6px;
+    line-height: 110%;
+    color: #24242E;
+}
+
+.tel {
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #24242E;
+    text-decoration: none;
+}
+
+.phone {
+    margin-left: 129px;
+    text-align: right;
+}
+
+.blockIcon {
+    &__block {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        margin-right: 10px;
+    }
+
+    &__text {
+        max-width: 165px;
+        font-family: 'Circe';
+        font-size: 15px;
+        line-height: 110%;
+        color: #24242E;
+    }
+}
+
+.sqareButton {
+    width: 263px;
+    height: 69px;
+    background: #1E489B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+
+
+    font-family: 'Circe';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+
+.about {
+    position: relative;
+    
+    &__video {
+        margin-top: 67px;
+        width: 90%;
+    }
+
+    &__waves {
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        margin-bottom: -68px;
+    }
+
+    &__button {
+        margin-top: 52px;
+        margin-bottom: 68px;
+    }
+}
+
+.video {
+    &__title {
+        padding-bottom: 40px;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        margin-left: -70px;
+        margin-top: 53px;
+        vertical-align: top;
+        position: relative;
+    }
+}
+
+.playButton {
+    outline: none;
+}
