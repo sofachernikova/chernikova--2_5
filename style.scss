@@ -460,3 +460,60 @@
         right: 0;
     }
 }
+
+.moreAdvantages {
+    background: #24242E;
+    padding-top: 70px;
+    position: relative;
+
+    &__section {
+        width: 90%;
+        padding-bottom: 70px;
+        
+    }
+    
+    &__title {
+        width: 732px;
+        color: #FFFFFF;
+        min-height: 150px;
+    }
+
+    &__secondSection {
+        margin-top: 27px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    &__block {
+        width: 371px;
+        padding-bottom: 63px;
+        filter: grayscale(100%);
+    }
+    
+    &__block:hover {
+        filter: grayscale(0%);
+        transition: 0.5s;
+    }
+
+    &__subtitle {
+        color: #FFFFFF;
+        margin-top: 40px;
+        max-width: 333px;
+    }
+
+    &__figure {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        
+    }
+}
+
+.subtitle {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 120%;
+}
