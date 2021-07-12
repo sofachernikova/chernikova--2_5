@@ -479,13 +479,22 @@
     margin-top: 11px;
 }
 
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
 
 .application {
     background: #24242E;
     min-height: 342px;
     margin-top: 132px;
     position: relative;
-    z-index: -2;
+    // z-index: -2;
+
+    &__icon {
+        width: 100%;
+    }
 
     &__content {
         width: 90%;
@@ -499,13 +508,9 @@
         font-size: 27px;
         line-height: 120%;
         padding-top: 55px;
-    }
-
-    &__figures {
-        position: absolute;
-        bottom: 0;
-        right: 11%;
-        z-index: -1;
+        @media (max-width: 768px) {
+            font-size: calc(20px + (27 - 20) * ((100vw - 320px) / (1400 - 320)));
+        }
     }
 
     &__form {
@@ -529,6 +534,9 @@
         padding-left: 30px;
         margin-top: 33px;
         z-index: 5;
+        @media (max-width: 1212px) {
+            width: 100%;
+        }
     }
 
     &__form-input:focus {
@@ -538,16 +546,22 @@
     &__button {
         width: 360px;
         margin-top: 33px;
+        @media (max-width: 1212px) {
+            width: 100%;
+        }
     }
 
     &__img {
         position: absolute;
         bottom: 145px;
         right: 251px;
+        @media (max-width: 1212px) {
+            display: none;
+        }
     }
 
     &__minilink {
-        width: 1005px;
+        width: 100%;
         font-family: Circe;
         font-weight: normal;
         font-size: 14px;
@@ -616,10 +630,6 @@
         min-height: 225px;
         background: #F8F8F8;
         margin-top: 30px;
-        // padding-top: 39px;
-        // padding-left: 40px;
-        // padding-right: 40px;
-        // padding-bottom: 39px;
     }
 
     &__images {
