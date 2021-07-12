@@ -229,12 +229,22 @@
 }
 
 .navbar2 {
+  background-color: white;
+  padding: 16px 0 16px 0;
+}
+
+.navbar2__content {
+  width: 90%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar2__logo {
@@ -310,10 +320,6 @@
 
 .phone {
   margin-left: 129px;
-  text-align: right;
-}
-
-.phone2 {
   text-align: right;
 }
 

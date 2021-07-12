@@ -196,8 +196,16 @@
 }
 
 .navbar2 {
-    display: flex;
-    justify-content: space-between;
+    background-color: white;
+    padding: 16px 0 16px 0;
+
+    &__content {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     
     &__logo {
         display: flex;
@@ -267,9 +275,9 @@
     margin-left: 129px;
     text-align: right;
 }
-.phone2 {
-    text-align: right;
-}
+// .phone2 {
+//     text-align: right;
+// }
 
 .blockIcon {
     &__block {
