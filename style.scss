@@ -658,6 +658,9 @@
     &__buttons {
         position: absolute;
         right: 0;
+        @media (max-width: 1215px) {
+            display: none;
+        }
     }
 }
 

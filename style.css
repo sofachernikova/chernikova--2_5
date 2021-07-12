@@ -773,6 +773,12 @@
   right: 0;
 }
 
+@media (max-width: 1215px) {
+  .partners__buttons {
+    display: none;
+  }
+}
+
 .moreAdvantages {
   background: #24242E;
   padding-top: 70px;
