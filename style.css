@@ -590,6 +590,12 @@
   width: 100%;
 }
 
+@media (min-width: 1212px) {
+  .application__icon {
+    display: none;
+  }
+}
+
 .application__content {
   width: 90%;
 }

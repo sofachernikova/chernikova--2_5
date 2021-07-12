@@ -494,6 +494,9 @@
 
     &__icon {
         width: 100%;
+        @media (min-width: 1212px) {
+            display: none;
+        }
     }
 
     &__content {
