@@ -388,7 +388,7 @@
     margin-top: 103px;
 
     &__title {
-        width: 714px;
+        max-width: 714px;
         margin-top: 80px;
     }
 
@@ -419,6 +419,10 @@
         display: flex;
         justify-content: flex-start;
         margin-top: 70px;
+        @media (max-width: 530px) {
+            flex-direction: column;
+            margin-top: 60px;
+        }
     }
 
     &__block {
@@ -437,15 +441,24 @@
     }
 
     &__content {
-        width: 390px;
+        max-width: 390px;
+         @media (max-width: 530px) {
+            margin-top: 23px;
+        }
     }
 
     &__heading {
         margin-left: 50px;
+        @media (max-width: 530px) {
+            margin-left: 0;
+        }
     }
 
     &__text {
         margin-left: 50px;
+        @media (max-width: 530px) {
+            margin-left: 0;
+        }
     }
 }
 
