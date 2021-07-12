@@ -37,6 +37,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
+  position: relative;
 }
 
 .header__section {
@@ -64,9 +65,10 @@
   color: #24242E;
 }
 
-@media (min-width: 0) {
+@media (max-width: 768px) {
   .header__title {
     font-size: calc(25px + (40 - 25) * ((100vw - 320px) / (1400 - 320)));
+    width: 85%;
   }
 }
 
@@ -76,10 +78,39 @@
   font-size: 18px;
   line-height: 27px;
   color: #24242E;
+  line-height: 137%;
+}
+
+@media (max-width: 768px) {
+  .header__subtitle {
+    font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1400 - 320)));
+    width: 50%;
+  }
+}
+
+.header__icons2 {
+  margin-top: 4px;
+  max-width: 817px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+
+@media (min-width: 376px) {
+  .header__icons2 {
+    display: none;
+  }
 }
 
 .header__icons {
-  margin-top: 59px;
+  margin-top: 4px;
   max-width: 817px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,6 +121,55 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 122px;
+}
+
+@media (max-width: 376px) {
+  .header__icons {
+    display: none;
+  }
+}
+
+.header__arrow {
+  position: absolute;
+  left: 47%;
+  bottom: 19px;
+}
+
+@media (min-width: 376px) {
+  .header__arrow {
+    display: none;
+  }
+}
+
+.sqareButton2 {
+  width: 263px;
+  height: 69px;
+  background: #1E489B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  font-family: 'Circe';
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 376px) {
+  .sqareButton2 {
+    display: none;
+  }
+}
+
+.sqareButton2:hover {
+  background: #6984bb;
 }
 
 .hover__title {
@@ -103,8 +183,15 @@
   display: flex;
 }
 
+@media (max-width: 1252px) {
+  .navbar {
+    display: none;
+  }
+}
+
 .navbar__logo {
   padding-right: 78px;
+  text-decoration: none;
 }
 
 .navbar__block {
@@ -141,6 +228,46 @@
   margin-right: 0;
 }
 
+.navbar2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar2__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+
+.navbar2__block {
+  list-style: none;
+}
+
+.navbar2__item {
+  margin-left: 20px;
+}
+
+.navbar2__minilink {
+  font-family: 'Circe';
+  font-size: 14px;
+  line-height: 21px;
+  color: #1E489B;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+@media (min-width: 1252px) {
+  .navbar2 {
+    display: none;
+  }
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,6 +285,7 @@
   font-size: 9.6px;
   line-height: 110%;
   color: #24242E;
+  text-decoration: none;
 }
 
 .tel {
@@ -170,8 +298,22 @@
   text-decoration: none;
 }
 
+.tel2 {
+  font-family: 'Exo 2';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  width: 100%;
+  text-align: center;
+  border-bottom: none;
+}
+
 .phone {
   margin-left: 129px;
+  text-align: right;
+}
+
+.phone2 {
   text-align: right;
 }
 
@@ -182,6 +324,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 55px;
 }
 
 .blockIcon__icon {
@@ -210,12 +353,15 @@
       -ms-flex-align: center;
           align-items: center;
   border: none;
-  outline: none;
   font-family: 'Circe';
   font-weight: normal;
   font-size: 18px;
   line-height: 27px;
   color: #FFFFFF;
+}
+
+.sqareButton:hover {
+  background: #6984bb;
 }
 
 .about {
@@ -428,6 +574,39 @@
   color: #FFFFFF;
   margin-top: 16px;
   padding-bottom: 30px;
+}
+
+.application--light__title {
+  color: #24242E;
+  max-width: 75%;
+  font-family: Circe;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 120%;
+  padding-top: 55px;
+}
+
+.application--light__form-input {
+  border: none;
+  outline: none;
+  width: 330px;
+  height: 69px;
+  background: #F8F8F8;
+  font-family: Circe;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  padding-left: 30px;
+  margin-top: 33px;
+  z-index: 5;
+}
+
+.application--light__form-input:focus {
+  border-bottom: 4px solid #1E489B;
+}
+
+.application--light__button {
+  width: 360px;
 }
 
 .partners {
