@@ -64,6 +64,7 @@
         font-size: 40px;
         line-height: 137%;
         color: #24242E;
+        // Адаптация
         @media (max-width: 768px) {
             font-size: calc(25px + (40 - 25) * ((100vw - 320px) / (1400 - 320)));
             width: 85%;
@@ -78,6 +79,7 @@
         line-height: 27px;
         color: #24242E;
         line-height: 137%;
+        // Адаптация
         @media (max-width: 768px) {
             font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1400 - 320)));
             width: 50%;
@@ -92,6 +94,7 @@
         flex-wrap: wrap;
         width: 90%;
         margin: auto;
+        // Адаптация
         @media (min-width: 376px) {
             display: none;
         }
@@ -104,6 +107,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         padding-bottom: 122px;
+        // Адаптация
         @media (max-width: 376px) {
             display: none;
         }
@@ -114,6 +118,7 @@
         position: absolute;
         left: 47%;
         bottom: 19px;
+        // Адаптация
         @media (min-width: 376px) {
             display: none;
         }
@@ -128,7 +133,7 @@
     justify-content: center;
     align-items: center;
     border: none;
-    // outline: none;
+    // Адаптация
     @media (max-width: 376px) {
             display: none;
         }
@@ -151,6 +156,7 @@
 
 .navbar {
     display: flex;
+    // Адаптация
     @media (max-width: 1252px) {
         display: none;
     }
@@ -220,7 +226,7 @@
         margin-left: auto;
         margin-right: 0;
      }
-
+// Адаптация
     @media (min-width: 1252px) {
         display: none;
     }
