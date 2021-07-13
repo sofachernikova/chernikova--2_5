@@ -25,12 +25,21 @@
   white-space: nowrap;
 }
 
+// ЦВЕТА
+
+$black: #24242E;
+$dark-gray: #353542;
+$dark-sea: #1E489B;
+$light-sea: #6984BB;
+$white: #FFFFFF;
+$milky: #F8F8F8;
+
 .title {
     font-family: 'Circe';
     font-weight: bold;
     font-size: 40px;
     line-height: 120%;
-    color: #24242E;
+    color: $black;
     @media (max-width: 768px) {
         font-size: calc(27px + (40 - 27) * ((100vw - 320px) / (1400 - 320)));
     }
@@ -66,7 +75,7 @@
         font-weight: normal;
         font-size: 40px;
         line-height: 137%;
-        color: #24242E;
+        color: $black;
         @media (max-width: 768px) {
             font-size: calc(25px + (40 - 25) * ((100vw - 320px) / (1400 - 320)));
             width: 85%;
@@ -79,7 +88,7 @@
         font-family: 'Circe';
         font-size: 18px;
         line-height: 27px;
-        color: #24242E;
+        color: $black;
         line-height: 137%;
         @media (max-width: 768px) {
             font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1400 - 320)));
@@ -126,7 +135,7 @@
 .sqareButton2 {
     width: 263px;
     height: 69px;
-    background: #1E489B;
+    background: $dark-sea;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,15 +149,15 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 27px;
-    color: #FFFFFF;
+    color: $white;
 }
 
 .sqareButton2:hover {
-    background: #6984bb;
+    background: $light-sea;
 }
 
 .hover__title {
-    color: #1E489B;
+    color: $dark-sea;
     font-weight: bold;
 }
 
@@ -179,19 +188,19 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
         text-decoration: none;
-        color: #24242E;
+        color: $black;
         padding-top: 26px;
      }
 
     &__link:hover {
-        border-top: 4px solid #1E489B;
+        border-top: 4px solid $dark-sea;
     }
 
      &__minilink {
         font-family: 'Circe';
         font-size: 14px;
         line-height: 21px;
-        color: #1E489B;
+        color: $dark-sea;
         text-decoration: none;
         margin-left: auto;
         margin-right: 0;
@@ -226,7 +235,7 @@
         font-family: 'Circe';
         font-size: 14px;
         line-height: 21px;
-        color: #1E489B;
+        color: $dark-sea;
         text-decoration: none;
         margin-left: auto;
         margin-right: 0;
@@ -248,7 +257,7 @@
     font-weight: normal;
     font-size: 9.6px;
     line-height: 110%;
-    color: #24242E;
+    color: $black;
     text-decoration: none;
 }
 
@@ -259,7 +268,7 @@
     font-size: 18px;
     line-height: 27px;
 
-    color: #24242E;
+    color: $black;
     text-decoration: none;
 }
 
@@ -294,14 +303,14 @@
         font-family: 'Circe';
         font-size: 15px;
         line-height: 110%;
-        color: #24242E;
+        color: $black;
     }
 }
 
 .sqareButton {
     width: 263px;
     height: 69px;
-    background: #1E489B;
+    background: $dark-sea;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -311,11 +320,11 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 27px;
-    color: #FFFFFF;
+    color: $white;
 }
 
 .sqareButton:hover {
-    background: #6984bb;
+    background: $light-sea;
 }
 
 
@@ -411,7 +420,7 @@
         position: absolute;
         margin-left: 37px;
         margin-top: 30px;
-        color: #FFFFFF;
+        color: $white;
     }
 
     &__advantage-card {
@@ -467,7 +476,7 @@
     font-weight: normal;
     font-size: 30px;
     line-height: 120%;
-    color: #24242E;
+    color: $black;
 }
 
 .card-subtitle {
@@ -475,7 +484,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 120%;
-    color: #24242E;
+    color: $black;
     margin-top: 11px;
 }
 
@@ -486,7 +495,7 @@
 
 
 .application {
-    background: #24242E;
+    background: $black;
     min-height: 342px;
     margin-top: 132px;
     position: relative;
@@ -504,7 +513,7 @@
     }
 
     &__title {
-        color: #FFFFFF;
+        color: $white;
         max-width: 75%;
         font-family: Circe;
         font-weight: bold;
@@ -528,12 +537,12 @@
         outline: none;
         width: 330px;
         height: 69px;
-        background: #353542;
+        background: $dark-gray;
         font-family: Circe;
         font-weight: normal;
         font-size: 18px;
         line-height: 27px;
-        color: #FFFFFF;
+        color: $white;
         padding-left: 30px;
         margin-top: 33px;
         z-index: 5;
@@ -543,7 +552,7 @@
     }
 
     &__form-input:focus {
-        border-bottom: 4px solid #1E489B;
+        border-bottom: 4px solid $dark-sea;
     }
 
     &__button {
@@ -569,14 +578,14 @@
         font-weight: normal;
         font-size: 14px;
         line-height: 120%;
-        color: #FFFFFF;
+        color: $white;
         margin-top: 16px;
         padding-bottom: 30px;
     }
 
     &--light {
         &__title {
-        color: #24242E;
+        color: $black;
         max-width: 75%;
         font-family: Circe;
         font-weight: bold;
@@ -590,7 +599,7 @@
         outline: none;
         width: 330px;
         height: 69px;
-        background: #F8F8F8;
+        background: $milky;
         font-family: Circe;
         font-weight: normal;
         font-size: 18px;
@@ -601,7 +610,7 @@
         }
 
         &__form-input:focus {
-            border-bottom: 4px solid #1E489B;
+            border-bottom: 4px solid $dark-sea;
         }
 
         &__button {
@@ -631,7 +640,7 @@
     &__onePartner {
         width: 360px;
         min-height: 225px;
-        background: #F8F8F8;
+        background: $milky;
         margin-top: 30px;
     }
 
@@ -645,7 +654,7 @@
         font-family: Circe;
         font-size: 14px;
         line-height: 120%;
-        color: #24242E;
+        color: $black;
         margin-left: 40px;
         margin-top: 28px;
         padding-bottom: 39px;
@@ -668,7 +677,7 @@
 }
 
 .moreAdvantages {
-    background: #24242E;
+    background: $black;
     padding-top: 70px;
     position: relative;
 
@@ -680,7 +689,7 @@
     
     &__title {
         max-width: 732px;
-        color: #FFFFFF;
+        color: $white;
     }
 
     &__secondSection {
@@ -705,7 +714,7 @@
     }
 
     &__subtitle {
-        color: #FFFFFF;
+        color: $white;
         margin-top: 40px;
         max-width: 333px;
     }
